@@ -12,7 +12,7 @@ class Tests(unittest.TestCase):
     
     def test_three(self):
         var3 = int(os.getenv('var3'))
-        self.assertEqual(var3, 2, 'please set var3 to 3')
+        self.assertEqual(var3, 3, 'please set var3 to 3')
     
 if __name__ == '__main__':
     unittest.main()
