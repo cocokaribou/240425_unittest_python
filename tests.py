@@ -3,7 +3,7 @@ import os
 
 class Tests(unittest.TestCase):
     def test_one(self):
-        var1 = 0
+        var1 = 1
         self.assertEqual(var1, 1, 'please set var1 to 1')
 
     def test_two(self):
