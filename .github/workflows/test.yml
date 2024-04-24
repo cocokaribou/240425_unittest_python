@@ -8,8 +8,9 @@ on:
 jobs:
     test_job:
         runs-on: ubuntu-latest
-        permissions:
-          issues: write
+        env:
+            var2: ${{ vars.var2 }}
+            var3: ${{ secrets.var3 }}
         steps:
             - name: 저장소 체크아웃
               uses: actions/checkout@v4
